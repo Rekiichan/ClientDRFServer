@@ -1,0 +1,13 @@
+*.log
+*.pot
+*.pyc
+
+# backup file
+*.bak
+
+
+
+restven/
+__pycache__/
+App/migrations/__pycache__/
+RestFramework/__pycache__/
