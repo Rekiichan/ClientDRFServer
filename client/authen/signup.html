@@ -1,0 +1,12 @@
+{% comment %} {% extends 'layout/base.html' %}
+<!-- authen -->
+{% block authen %}{% endblock %}
+<!-- search -->
+{% block search %}{% endblock %}
+<!-- load -->
+{% load static%}
+<!-- content -->
+{% block content %}
+<h2>Sign Up</h2>
+<form method="post">{% csrf_token %}</form>
+{% endblock %} {% endcomment %}

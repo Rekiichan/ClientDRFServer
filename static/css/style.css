@@ -1,0 +1,24 @@
+.login {
+    max-width: 400px;
+}
+
+.signin {
+    max-width: 400px;
+}
+
+.location-table {
+    text-align: center;
+    width: 100%;
+    background: white;
+    color: black;
+    position: relative;
+}
+
+.category-table {
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    background: white;
+    color: black;
+    position: relative;
+}

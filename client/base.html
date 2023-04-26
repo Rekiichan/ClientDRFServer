@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FEDERATED LEARNING</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <!-- <link
+      rel="icon"
+      href="{% static 'img/favicon.ico' %}"
+      type="image/x-icon"
+    /> -->
+  <!-- ICON CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css" />
+
+  <!-- static css file -->
+
+  <!-- <link rel="stylesheet" href="{% static 'css/style.css' %}" /> -->
+
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="container-fluid">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <!-- <a class="nav-link active" href="{% url 'home' %}">HOME</a> -->
+        </li>
+
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Management
+          </button>
+          <!-- <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li class="dropdown-item">
+              <a class="dropdown-item" href="{% url 'list_category' %}">Category Management</a>
+            </li>
+            <li class="dropdown-item">
+              <a class="dropdown-item" href="{% url 'list_warehouse' %}">Warehouse Management</a>
+            </li>
+            <li class="dropdown-item">
+              <a class="dropdown-item" href="{% url 'list_location' %}">Location Management</a>
+            </li>
+            <li class="dropdown-item">
+              <a class="dropdown-item" href="{% url 'list_product' %}">Product Management</a>
+            </li> -->
+          <!-- </ul> -->
+        </div>
+      </ul>
+
+
+
+
+      <!-- <form class="d-flex">
+        <input class="form-control me-2" type="text" placeholder="Search" />
+        <button class="btn btn-primary" type="button">Search</button>
+      </form> -->
+
+      <!-- check is login -->
+
+      <!-- logout -->
+
+      <!-- <div class="d-flex flex-row">
+        <p class="text-white p-1 pe-3">Welcome, {{ user.username }}.</p>
+        <button class="p-2 btn btn-primary logout" type="button">
+          <a href="{% url 'logout' %}" class="text-white">Logout</a>
+        </button>
+      </div>
+      {% else %}
+      <div class="d-flex flex-row">
+        {% comment %}
+        <button class="p-2 btn btn-primary register" type="button">
+          <a href="{% url 'signup' %}" class="text-white">Sign Up</a>
+        </button>
+        {% endcomment %}
+        <button class="p-2 btn btn-primary login">
+          <a href="{% url 'api/login' %}" class="text-white">Login</a>
+        </button>
+      </div> -->
+
+    </div>
+  </nav>
+
+</head>
+
+<body>
+  <p>Click on the "Choose File" button to upload a file:</p>
+  <form action="http://127.0.0.1:8000/api/upload-param" method="POST" enctype="multipart/form-data">
+    <input type="file" id="myFile" name="filename">
+    <input type="submit">
+  </form>
+</body>
+<footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</footer>
+
+</html>
